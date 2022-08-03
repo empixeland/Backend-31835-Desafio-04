@@ -1,0 +1,24 @@
+html
+    head 
+
+    body
+    ul
+        li
+            a(href="/formulario"  ) Formulario
+                li
+                    a(href="/productos" ) Productos
+                div(class="container")
+                table
+                    thead
+                        tr
+                            th Name
+                            th Price
+                            th Thumbnail
+                    tbody
+                            each pr in data
+                                tr
+                                    td= pr.title
+                                    td= pr.price
+                                    td
+                                        img(src=pr.thumbnail width=200 height=200)
+                                

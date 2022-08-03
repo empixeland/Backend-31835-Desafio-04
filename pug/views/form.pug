@@ -1,0 +1,29 @@
+html
+    head 
+
+    body
+        ul
+            li
+                a Form
+                    li
+                        a Products
+                        div
+                            form(action="/productos" method="POST")
+                                div 
+                                    label(for="inputName") Name
+                                div 
+                                    input(type="text" id="inputName" name="title" placeholder="Name of the product")
+
+                                div
+                                    label(for="inputPass" ) Price
+                                div 
+                                    input(type="number"  id="inputPass" name="price" placeholder="Price of the product")
+
+                                div
+                                    label(for="inputThumb" ) Thumbnail
+                                div
+                                    input(type="text"  id="inputThumb" name="thumbnail" placeholder="URL of the product")
+                                
+                                div
+                                    div
+                                        button(type="submit") Send
